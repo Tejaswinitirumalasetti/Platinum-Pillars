@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .hero-section {
+            background: url('./hero-bg.jpg') no-repeat center center/cover;
+            min-height: 95vh;
+            color: white;
+            border-radius: 40px;
+            padding: 20px;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #34a0a4 !important;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 15px;
+            font-size: 1rem;
+        }
+
+        .social-icons a:hover {
+            color: #34a0a4;
+        }
+
+        .hero-content {
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-content h5 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .start-btn {
+            background-color: #34a0a4;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .card-title {
+            font-size: 30px
+        }
+
+        .card-text {
+            font-size: 70px
+        }
+
+        .card-deck {
+            border-radius: 20px;
+        }
+
+        .apostrophe {
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: #34a0a4 !important;
+            font-size: 100px;
+        }
+
+        .bg-cover {
+            background-image: url('https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/cta.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            margin-bottom: 20px;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: teal;
+        }
+
+        .btn-custom {
+            background-color: #3cbcb4;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 25px;
+            border: none;
+        }
+
+        .divider {
+            width: 40px;
+            height: 2px;
+            background-color: #3cbcb4;
+            margin: 0 auto 20px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+
+
+    <div class="container hero-section">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark px-3">
+            <a class="navbar-brand" href="#">
+                <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/site-logo.svg"
+                    alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2"><a class="nav-link" href="#" style="color:#34a0a4 !important">Home</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#">Properties</a></li>
+                    <li class="nav-item px-2"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="d-none d-lg-block social-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color:#e63333;"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h4>Discover Your Dream Home with Us</h4>
+            <h1>Find the Perfect Property<br>for Your Lifestyle</h1>
+            <a href="#" class="start-btn mt-4 d-inline-block " style="text-decoration:none;">Start Searching</a>
+        </div>
+    </div>
+
+    <div class="container bg-white mt-5" style="border-radius:20px;">
+        <div class="row">
+            <div class="col-12 p-5 mx-2" style="text-align: center;">
+                <h1>What We Do</h1>
+                <p style="color: gray;">Simplifying the journey of buying, selling, and renting properties. Our expert
+                    team <br />
+                    provides comprehensive real estate solutions tailored to your needs</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                <div class="card-body">
+                    <p style="color: rgb(32, 136, 101)">01</p>
+                    <div>
+                        <h5><span class="web-title">Property Sales</span><br /> <br /></h5>
+                        <span style="color: gray;"> Find your Dream home throught Real Estate.Our expert teame will
+                            guide you
+                            through the process and smooth transaction.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <p style="color: rgb(32, 136, 101)">02</p>
+                    <div>
+                        <h5><span class="web-title">Property Rentals</span><br /> <br /></h5>
+                        <span style="color: gray;"> Find your dream rental property with Real Estate, Offering a variety
+                            of options to
+                            suit your needs and preferences.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <p style="color: rgb(32, 136, 101)">03</p>
+                    <div>
+                        <h5><span class="web-title">Property Management</span><br /> <br /></h5>
+                        <span style="color: gray"> Trust Real Estate to handle day-by-day Management of your property,
+                            Maximising its value and Minimising your stress.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <p style="color: rgb(32, 136, 101)">04</p>
+                    <div>
+
+                        <h5> <span class="web-title">Lucrative Investments</span><br /> <br /></h5>
+                        <span style="color: gray"> Real Esate presents Lucrative Investments opportunities in real
+                            estate markets, Providing high requests on investments.
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-6 p-5 mt-5 " style="text-align: center;">
+                <h1>Featured Properties</h1>
+                <p>Discover our hand-picked selection of top-notch properties with outstanding
+                    features,
+                <p> guaranteed to meet your real estate needs and exceed your expectations.</p>
+                </p>
+                <p>_________</p>
+            </div>
+            <div class="card-deck">
+                <div class="card bg-light border-0">
+                    <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/feature-01.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Apartment-Queens</p>
+                        <h4>Modern stylish apartments</h4>
+                        <p class="card-description" style="color: gray;">Discover the epitom of comtempory living in our
+                            sleek and
+                            chic modern stylish apartments.</p>
+                        <p class="card-price" style="color:#0b787c;">$ 150,000</p>
+                    </div>
+                </div>
+                <div class="card bg-light border-0">
+                    <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/feature-02.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Apartment-Queens</p>
+                        <h4>Contemporary Apartments</h4>
+                        <p class="card-description" style="color: gray;"> Experience the perfect blend of sophistication
+                            and urban
+                            living in our cutting-edge contemporary apartments.</p>
+                        <p class="card-price" style="color:#0b787c;">$ 150,000</p>
+                    </div>
+                </div>
+                <div class="card bg-light border-0">
+                    <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/feature-03.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p>Apartment-Queens</p>
+                        <h4>Suburban Single-Family Homes</h4>
+                        <p class="card-description" style="color: gray;">Embrace the idyllic charm and tranquility of
+                            suburban living
+                            in our spacious and welcoming single-family homes.</p>
+                        <p class="card-price" style="color:#0b787c;">$ 150,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-white p-5 " style="border-radius:20px">
+        <div class="row">
+            <div class=" col-12 col-md-6">
+                <h1 class="apostrophe">"</h1>
+                <h1>Read from clients who have found the perfect place where they can create...</h1>
+                <p>_________</p>
+                <p>Discover testimonials from satisfied clients who have found their dream properties with Real
+                    Estate,
+                    the trusted experts in helping you find the perfect place to call home.</p>
+
+                <a href="#" class="text-white rounded-pill p-2" style="background-color:#34a0a4;text-decoration: none;">
+                    MORE TESTIMONIALS
+                </a>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="border m-4" style="border-radius:20px;">
+                    <div class="col">
+                        <p class="my-2">
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                        </p>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id convallis neque. Nam
+                            scelerisque placerat orci. Maecenas at pulvinar dui. In fermentum,
+                            lectus sed tincidunt ornare, arcu ex convallis sapien, quis vestibulum libero tellus quis
+                            nisl.”</p>
+                        <p style="color:#34a0a4;">JAMES OLIVER</p>
+                    </div>
+                </div>
+
+                <div class="border m-4" style=" border-radius:20px;">
+                    <div class="col">
+                        <p class="my-2">
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                            <a style="color:#F0AD4E; " href=""><i class="fa-solid fa-star"></i></a>
+                        </p>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id convallis neque. Nam
+                            scelerisque placerat orci. Maecenas at pulvinar dui. In fermentum, lectus sed tincidunt
+                            ornare, arcu ex convallis sapien, quis vestibulum libero tellus quis nisl.”</p>
+                        <p style="color:#34a0a4;">JAMES OLIVER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container bg-white p-5 mt-5 " style="border-radius:20px;">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/connecting-with-customers.jpg"
+                    class="w-100 " alt="Description" style="border-radius:10px; ">
+            </div>
+            <div class="col-md-6">
+                <h1>Connecting people with perfect homes is our passion.</h1>
+                <p style="color:#34a0a4;"> ______</p>
+                <p style="color:gray;">With a genuine passion for helping people find their dream homes, we are
+                    dedicated to connecting buyers and sellers in the real estate market. Trust us to make your home
+                    buying or selling experience seamless and satisfying.</p>
+                <a href="#" class="text-white rounded-pill p-2 m-2"
+                    style="background-color:#34a0a4;text-decoration: none;">
+                    READ MORE
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-cover mt-5">
+                <div class="form-container text-center">
+                    <p>Contact Us</p>
+                    <h5 class="mb-2">Schedule an Appointment</h5>
+                    <p style="color:#34a0a4;"> ______</p>
+
+
+                    <form>
+                        <input type="text" class="form-control" placeholder="Name" required>
+                        <input type="email" class="form-control" placeholder="Email" required>
+                        <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn-custom mt-3">REQUEST A CALL BACK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class=" row ">
+            <div class="col">
+                <img
+                    src="https://websitedemos.net/real-estate-company-04/wp-content/uploads/sites/1484/2023/07/footer-logo.svg">
+            </div>
+            <div class="col">
+                <h5>About Us</h5>
+                <p>At Real Estate, we pride ourselves on being a trusted and reputable name in the real
+                    estate industry with years of experience.</p>
+            </div>
+            <div class="col">
+                <h5>Contact Info</h5>
+                <p style="color:#34a0a4">13,Fifthe Avenue,New York, NY 101660
+                    contact@info.com
+                    555-345-4599</p>
+            </div>
+            <div class="col">
+                <h5>Property Search</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Donec faucibus, quam sed.</p>
+                <form class="col">
+                    <div class="field text-right">
+                        <input type="text" placeholder="Search Properties" />
+                    </div>
+                    <div class="text-right">
+                        <a href="" style="text-align: right;background-color:#34a0a4;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <p style="color:grey">Copyright @ 2025 Real Estate Company</p>
+            </div>
+            <div class="col-4 mb-5">
+                <a href=""><i class="fa-solid fa-dove"></i></a>
+                <a href=""><i class="fa-solid fa-p"></i></a>
+                <a href=""><i class="fa-brands fa-youtube" style="color: #e63333;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
